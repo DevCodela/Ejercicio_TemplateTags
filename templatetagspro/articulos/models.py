@@ -6,7 +6,7 @@ class Articulo(models.Model):
 
     """
     Este modelo almacena los artículos pidiendo que cada 
-    curso tenga un nombre, votos y un estado para saber 
+    una tenga un nombre, votos y un estado para saber 
     si está publicado o no.
     """
     nombre = models.CharField(max_length=140)
