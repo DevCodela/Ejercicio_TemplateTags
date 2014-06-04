@@ -1,0 +1,52 @@
+[
+    {
+        "pk": 1, 
+        "model": "articulos.articulo", 
+        "fields": {
+            "nombre": "Introducci\u00f3n a Django", 
+            "votos": 2, 
+            "publicado": true, 
+            "usuario": "victor"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "articulos.articulo", 
+        "fields": {
+            "nombre": "Cookies en Django", 
+            "votos": 5, 
+            "publicado": true, 
+            "usuario": "victor"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "articulos.articulo", 
+        "fields": {
+            "nombre": "Introducci\u00f3n a South", 
+            "votos": 10, 
+            "publicado": true, 
+            "usuario": "edwin"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "articulos.articulo", 
+        "fields": {
+            "nombre": "Backbone.js b\u00e1sico", 
+            "votos": 0, 
+            "publicado": false, 
+            "usuario": "jean"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "articulos.articulo", 
+        "fields": {
+            "nombre": "Ruby and Rails b\u00e1sico", 
+            "votos": 0, 
+            "publicado": false, 
+            "usuario": "elisa"
+        }
+    }
+]

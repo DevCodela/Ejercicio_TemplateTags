@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+
+    <div class="wrapper">
+        
+        <h1>Artículos Disponibles</h1>
+
+        {% for articulo in articulos %}
+        <div class="box {% cycle 'gris' 'normal' %}">
+            
+            <span class="order">{{ forloop.counter }}</span>
+
+            <span>{{ articulo.nombre }}</span>
+
+            {% if articulo.publicado %}
+            <span class="votos amarillo">
+                {% if articulo.votos != 0 %}
+                    {{ articulo.votos }} Votos
+                {% else %}
+                    Vota
+                {% endif %}
+            </span>
+            {% endif %}
+            
+            <span class="publicado {% if articulo.publicado %}verde{% else %}rojo{% endif %}">
+                {% if articulo.publicado %}
+                    Publicado
+                {% else %}
+                    Próximamente
+                {% endif %}
+            </span>
+
+        </div>
+        {% empty %}
+            <div class="alerta">
+                <p>Lo sentimos, no encontramos resultados.</p>
+                <p><a href="/admin">Puedes agregar más artículos.</a></p>
+            </div>
+        {% endfor %}
+
+{% endblock %}
